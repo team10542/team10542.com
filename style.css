@@ -1,10 +1,9 @@
-        /* --- TEMEL AYARLAR & RENK PALETİ --- */
         :root {
-            --bg-dark: #0a0f1c;      /* Çok koyu lacivert/siyah */
-            --bg-card: #151e32;      /* Kart arka planları */
-            --accent-blue: #00d4ff;  /* Neon Mavi (Ana vurgu rengi) */
-            --text-main: #ffffff;    /* Beyaz yazı */
-            --text-muted: #b0b8c4;   /* Gri yazı */
+            --bg-dark: #0a0f1c;      
+            --bg-card: #151e32;      
+            --accent-blue: #00d4ff;  
+            --text-main: #ffffff;    
+            --text-muted: #b0b8c4;   
             --gradient: linear-gradient(135deg, #00d4ff 0%, #0072ff 100%);
         }
 
@@ -22,7 +21,6 @@
         ul { list-style: none; }
         img { max-width: 100%; display: block; }
 
-        /* --- HEADER & NAV --- */
         header {
             position: fixed;
             top: 0;
@@ -44,12 +42,12 @@
         }
 
         .nav-logo-img {
-            height: 75px; /* Logo yüksekliği */
+            height: 75px;
             width: auto;
         }
 
         .logo-text {
-            font-size: 2rem; /* Yazıyı biraz küçülttük */
+            font-size: 2rem; 
             font-weight: 800;
             color: var(--accent-blue);
             text-transform: uppercase;
@@ -61,7 +59,6 @@
         nav a:hover { color: var(--accent-blue); text-shadow: 0 0 10px var(--accent-blue); }
         .menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; }
 
-        /* --- HERO SECTION (Giriş) --- */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -77,7 +74,6 @@
             width: 250px;
             height: 250px;
             margin-bottom: 20px;
-            /* Logo gelince burayı silip img etiketini aktif edeceksin */
             display: flex; align-items: center; justify-content: center;
         }
         
@@ -112,7 +108,6 @@
         }
         .btn:hover { color: var(--bg-dark); background: var(--accent-blue); box-shadow: 0 0 20px var(--accent-blue); }
 
-        /* --- ORTAK BÖLÜM STİLLERİ --- */
         section { padding: 80px 10%; }
         .section-title {
             font-size: 2.2rem;
@@ -127,7 +122,6 @@
             background: var(--accent-blue); margin: 10px auto 0;
         }
 
-        /* --- TIMELINE (YARIŞMA & ÖDÜL GEÇMİŞİ) --- */
         .timeline {
             position: relative;
             max-width: 800px;
@@ -138,7 +132,7 @@
             position: absolute;
             width: 2px;
             background: rgba(0, 212, 255, 0.3);
-            top: 0; bottom: 0; left: 20px; /* Mobilde solda çizgi */
+            top: 0; bottom: 0; left: 20px;
             margin-left: -1px;
         }
         .timeline-item {
@@ -146,7 +140,7 @@
             margin-bottom: 40px;
             padding-left: 50px;
         }
-        .timeline-item::after { /* Nokta */
+        .timeline-item::after {
             content: ''; position: absolute; left: 13px; top: 5px;
             width: 14px; height: 14px;
             background: var(--bg-dark);
@@ -172,14 +166,13 @@
             display: inline-block;
             margin-top: 10px;
             padding: 5px 10px;
-            background: rgba(255, 215, 0, 0.1); /* Altın rengi hafif arka plan */
+            background: rgba(255, 215, 0, 0.1);
             color: #ffd700;
             border-radius: 4px;
             font-size: 0.9rem;
         }
         .timeline-award i { margin-right: 5px; }
 
-        /* --- HAKKIMIZDA --- */
         .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
         .about-text p { margin-bottom: 20px; color: var(--text-muted); }
         .photo-placeholder {
@@ -195,7 +188,6 @@
         }
         .photo-placeholder img { width: 100%; height: 100%; object-fit: cover; }
 
-        /* --- ROBOT & EKİP & SPONSOR --- */
         .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
         
         .team-card {
@@ -211,16 +203,13 @@
         .sponsors-flex { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
         .sponsor-box {
             width: 140px; height: 80px;
-            /*background: rgba(255,255,255,0.05);*/
             display: flex; align-items: center; justify-content: center;
             border-radius: 8px;
-            /*color: #555; */
         }
 
-        /* --- ROBOTLARIMIZ GALERİSİ (V2) --- */
 .robot-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Geniş ekran yan yana, mobil alt alta */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
     margin-top: 40px;
 }
@@ -255,10 +244,9 @@
 }
 
 .robot-card:hover .robot-image-area img {
-    transform: scale(1.1); /* Resme zoom efekti */
+    transform: scale(1.1);
 }
 
-/* Sezon Etiketi (Sol Üst Köşe) */
 .season-badge {
     position: absolute;
     top: 15px;
@@ -291,7 +279,6 @@
     line-height: 1.5;
 }
 
-/* Teknik Özellikler Listesi */
 .robot-specs {
     display: flex;
     gap: 15px;
@@ -308,9 +295,6 @@
 }
 .spec-item i { color: var(--accent-blue); }
 
-/* --- GÜNCELLENMİŞ EKİP TASARIMI (HİYERARŞİK) --- */
-
-/* Üst Yönetim Alanı */
 .leadership-grid {
     display: flex;
     justify-content: center;
@@ -319,16 +303,15 @@
     margin-bottom: 60px;
 }
 
-/* Alt Ekipler Izgarası */
 .subteams-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Biraz daha geniş tuttum */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
 
 .subteam-box {
     background: var(--bg-card);
-    padding: 0; /* İçeride padding vereceğiz */
+    padding: 0;
     border-radius: 10px;
     border: 1px solid rgba(255,255,255,0.05);
     overflow: hidden;
@@ -336,7 +319,6 @@
     flex-direction: column;
 }
 
-/* Alt Ekip Başlığı */
 .subteam-header {
     background: rgba(0, 212, 255, 0.1);
     padding: 15px 25px;
@@ -351,7 +333,6 @@
     margin: 0;
 }
 
-/* Alt Ekip Kaptanı Alanı */
 .subteam-captain-area {
     padding: 15px 25px;
     background: rgba(255, 255, 255, 0.03);
@@ -370,65 +351,57 @@
     text-transform: uppercase;
 }
 
-/* Üye Listesi */
 .subteam-members {
     padding: 20px 25px;
 }
 .member-list {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* İsimler iki sütun */
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     font-size: 0.9rem;
     color: var(--text-muted);
 }
 .member-list li::before {
-    content: '›'; /* Ok işareti */
+    content: '›'; 
     color: var(--accent-blue);
     font-weight: bold;
     margin-right: 8px;
 }
 
-/* --- YENİ HİYERARŞİK EKİP DÜZENİ --- */
-
-/* 1. Seviye: Mentor Alanı (En Tepe) */
 .mentor-level {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px; /* Kaptanlarla arasındaki boşluk */
+    margin-bottom: 40px;
     width: 100%;
 }
 
-/* 2. Seviye: Kaptanlar Alanı (Yan Yana) */
 .captains-level {
     display: flex;
     justify-content: center;
-    gap: 40px; /* İki kaptan arası boşluk */
+    gap: 40px;
     flex-wrap: wrap;
-    margin-bottom: 60px; /* Alt ekiplerle arasındaki boşluk */
+    margin-bottom: 60px;
 }
 
-/* Özel Renk Tanımları */
 .card-mentor {
-    border-top-color: #e0e0e0 !important; /* Gümüş/Platin Rengi */
+    border-top-color: #e0e0e0 !important;
     box-shadow: 0 5px 20px rgba(255, 255, 255, 0.05);
 }
 
 .card-captain {
-    border-top-color: gold !important; /* Altın Rengi */
-    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.2); /* Altın parıltısı */
+    border-top-color: gold !important;
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.2);
 }
 
 .card-co-captain {
-    border-top-color: var(--accent-blue) !important; /* Takım Mavisi */
+    border-top-color: var(--accent-blue) !important;
     box-shadow: 0 5px 20px rgba(0, 212, 255, 0.1);
 }
 
-/* Mobil için liste tek sütuna düşsün */
 @media (max-width: 500px) {
     .member-list { grid-template-columns: 1fr; }
 }
 
-        /* --- FOOTER --- */
         footer {
             background: #05080f; padding: 50px 10%;
             border-top: 1px solid rgba(255,255,255,0.1); text-align: center;
@@ -436,11 +409,25 @@
         .social-icons a { font-size: 1.5rem; margin: 0 15px; color: var(--text-main); }
         .social-icons a:hover { color: var(--accent-blue); }
 
-        /* --- RESPONSIVE --- */
         @media (max-width: 768px) {
             .about-grid { grid-template-columns: 1fr; }
             .hero h1 { font-size: 2.2rem; }
-            nav ul { display: none; }
-            .menu-toggle { display: block; color: white; }
+            .menu-toggle { display: block; color: white; z-index: 1001; }
             .logo-text { font-size: 1rem; }
+            
+            nav ul { 
+                display: none; 
+                flex-direction: column; 
+                position: absolute; 
+                top: 100%; 
+                left: 0; 
+                width: 100%; 
+                background: var(--bg-dark); 
+                padding: 20px; 
+                border-bottom: 1px solid var(--accent-blue);
+            }
+
+            nav ul.active { 
+                display: flex; 
+            }
         }
